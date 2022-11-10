@@ -74,6 +74,7 @@ main{
     grid-template-columns: 2rem 1fr 4.5rem;
     gap: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.5rem;
 }
 
 .info img{
