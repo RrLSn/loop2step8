@@ -6,7 +6,7 @@
 
 
 body{
-    background-color: #ffffff;
+    background-color: #f0f4f8;
 }
 
 main{
@@ -15,14 +15,117 @@ main{
     background-color: black;
     margin: 3.5rem 39rem;
     border-radius: 8%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main{
-    width: 27rem;
+    width: 25rem;
     height: 44rem;
-    background-color: #ffffff;
-    margin: 3.5rem 39rem;
+    background-color: #f6f6f6;
     border-radius: 8%;
+    overflow: hidden;
+}
+
+.angle{
+    width: 100%;
+    height: 18rem;
+    margin-top: -7rem;
+    background-color: #497df4;
+    transform: skewY(30deg);
+}
+
+.main h2{
+    width: 10rem;
+    color: #ffffff;
+    margin: -8rem 7rem;
+    text-align: center;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top{
+    width: 15rem;
+    height: 2.3rem;
+    margin: -11rem 4.7rem;
+    background-color: black;
+    position: relative;
+    border-radius: 0 0 0.8rem 0.8rem;
     position: absolute;
 }
+
+.card img{
+    width: 22%;
+    height: 15rem;
+    position: absolute;
+    margin: -5rem 0.7rem;
+}
+
+.head{
+    width: 90%;
+    height: 40%;
+    margin: 13rem auto;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 2rem 1fr 4.5rem;
+    gap: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.7rem;
+    align-items: center;
+}
+
+.info h3{
+    font-size: 1.3rem;
+}
+
+.info p{
+    font-size: 1rem;
+}
+.switch{
+    position: relative;
+    width: 55px;
+    height: 30px;
+    display: inline-block;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    background-color: gray;
+    cursor: pointer;
+  }
+
+.slider::before{
+  position: absolute;
+  left: 1.5px;
+  top: 2.2px;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+  input:checked + .slider {
+    background-color: #4778eb;
+  }
