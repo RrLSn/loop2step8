@@ -109,18 +109,20 @@ main{
     left: 0;
     right: 0;
     border-radius: 50px;
-    background-color: gray;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
 
 .slider::before{
   position: absolute;
-  left: 1.5px;
-  top: 2.2px;
+  left: 0.5px;
+  top: 0.5px;
   content: "";
   width: 26px;
   height: 26px;
   background-color: white;
+  border: .5px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
 
